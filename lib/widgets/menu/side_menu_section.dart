@@ -15,24 +15,24 @@ class SideMenuSection extends StatelessWidget {
       child: SafeArea(
           child: Column(
         children: [
-          logo(),
+          const logo(),
           Expanded(
               child: SingleChildScrollView(
-            padding: EdgeInsets.all(kDefaultPadding),
+            padding: const EdgeInsets.all(kDefaultPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ContactsInfo(),
-                Divider(),
-                Goals(),
-                Divider(),
+                const ContactsInfo(),
+                const Divider(),
+                const Goals(),
+                const Divider(),
                 TextButton(
                   onPressed: () {},
                   child: FittedBox(
                     child: Row(
                       children: [
                         SvgPicture.asset('assets/icons/download.svg'),
-                        SizedBox(
+                        const SizedBox(
                           width: kDefaultPadding / 2,
                         ),
                         Text(
@@ -46,11 +46,11 @@ class SideMenuSection extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: kDefaultPadding * 2),
+                  margin: const EdgeInsets.only(top: kDefaultPadding * 2),
                   color: kBgColor,
                   child: Row(
                     children: [
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
                         onPressed: () {},
                         icon: SvgPicture.asset("assets/icons/linkedin.svg"),
@@ -67,7 +67,7 @@ class SideMenuSection extends StatelessWidget {
                         onPressed: () {},
                         icon: SvgPicture.asset("assets/icons/dribble.svg"),
                       ),
-                      Spacer()
+                      const Spacer()
                     ],
                   ),
                 )

@@ -24,8 +24,8 @@ class ContactsInfo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "$title",
-            style: TextStyle(
+            title,
+            style: const TextStyle(
               color: Colors.white,
             ),
           ),

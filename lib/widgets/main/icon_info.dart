@@ -33,7 +33,7 @@ class IconInfo extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: kDefaultPadding * 3,
                 ),
                 Row(
@@ -102,7 +102,7 @@ class IconInfo extends StatelessWidget {
           icon,
           size: 50.0,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(

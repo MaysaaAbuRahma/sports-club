@@ -12,7 +12,7 @@ class RecommandationsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 400,
-      padding: EdgeInsets.all(kDefaultPadding),
+      padding: const EdgeInsets.all(kDefaultPadding),
       color: kSecondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,20 +24,20 @@ class RecommandationsCard extends StatelessWidget {
             ),
             title: Text(
               demoRecommendations[0].name!,
-              style: TextStyle(
+              style: const TextStyle(
                   height: 2, fontSize: 20, fontWeight: FontWeight.bold),
               //overflow: TextOverflow.ellipsis,
             ),
             subtitle: Text(
               recommendation.source!,
-              style: TextStyle(height: 2, fontStyle: FontStyle.italic),
+              style: const TextStyle(height: 2, fontStyle: FontStyle.italic),
               // overflow: TextOverflow.ellipsis,
             ),
           ),
           Text(
             recommendation.text!,
             maxLines: 4,
-            style: TextStyle(height: 1.5),
+            style: const TextStyle(height: 1.5),
             overflow: TextOverflow.ellipsis,
           )
         ],

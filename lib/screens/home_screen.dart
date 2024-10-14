@@ -18,19 +18,19 @@ class HomeScreen extends StatelessWidget {
                         onPressed: () {
                           Scaffold.of(context).openDrawer();
                         },
-                        icon: Icon(Icons.menu),
+                        icon: const Icon(Icons.menu),
                       )),
             ),
-      drawer: SideMenuSection(),
+      drawer: const SideMenuSection(),
       body: SafeArea(
         child: Center(
           child: Container(
-            constraints: BoxConstraints(maxWidth: 1440.0),
+            constraints: const BoxConstraints(maxWidth: 1440.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 if (Respnsive.isDesktop(context))
-                  Expanded(
+                  const Expanded(
                     flex: 2,
                     child: SideMenuSection(),
                   ),

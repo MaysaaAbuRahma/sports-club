@@ -3,6 +3,9 @@ allprojects {
         google()
         mavenCentral()
     }
+            {
+   classpath 'com.android.tools.build:gradle:8.10.2' // تأكد من استخدام الإصدار المناسب
+            }
 }
 
 rootProject.buildDir = "../build"

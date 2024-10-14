@@ -13,11 +13,11 @@ class Recommendations extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Club Members",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          SizedBox(
+          const SizedBox(
             height: kDefaultPadding,
           ),
           SingleChildScrollView(

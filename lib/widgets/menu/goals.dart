@@ -10,7 +10,7 @@ class Goals extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
           child: Text("Goals",
               style: TextStyle(
@@ -34,7 +34,7 @@ class Goals extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset("assets/icons/check.svg"),
-          SizedBox(
+          const SizedBox(
             width: kDefaultPadding / 2,
           ),
           Text(text)

@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
               bodyMedium: const TextStyle(color: kBodyTextColor),
             ),
       ),
-      home: MainSection(),
+      home: const MainSection(),
     );
   }
 }

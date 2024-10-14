@@ -21,7 +21,7 @@ class ProjectCards extends StatelessWidget {
             project.image!,
             fit: BoxFit.cover,
           ),
-          SizedBox(
+          const SizedBox(
             height: kDefaultPadding,
           ),
           Text(
@@ -30,21 +30,21 @@ class ProjectCards extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: Theme.of(context).textTheme.labelSmall,
           ),
-          SizedBox(
+          const SizedBox(
             height: kDefaultPadding,
           ),
           Expanded(
             child: Text(
               project.description!,
-              style: TextStyle(height: 1.5),
+              style: const TextStyle(height: 1.5),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: kDefaultPadding,
           ),
           TextButton(
               onPressed: () {},
-              child: Text(
+              child: const Text(
                 'More Info >',
                 style: TextStyle(color: kPrimaryColor),
               ))
